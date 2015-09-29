@@ -21,6 +21,8 @@ alias w="wstorm"
 alias v="ssh nick@192.168.1.154"
 alias vu="~/repo/Voron/scp_teamcity.sh"
 
+alias fe="subl ~/.config/fish/config.fish"
+
 #
 # File system aliases
 #
@@ -33,13 +35,16 @@ alias lsd='ls -l | grep "^d"'
 alias ll='ls -ahlF'
 alias l='ls -CF'
 alias redmon='docker run -it --rm redis sh -c "exec redis-cli -h 192.168.1.117"'
+
 #
 # Git aliases
 #
 alias gp="git pull"
 alias go="git checkout"
 alias gh="git push"
-alias gc="git commit"
+alias gc="git commit -m"
+alias gaa="git add ."
+alias gs="git status"
 
 function make_completion --argument alias command
     complete -c $alias -a "(
