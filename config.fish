@@ -1,13 +1,15 @@
 source ~/.config/fish/nvm-wrapper/nvm.fish
 
 eval (docker-machine env default)
+set fish_key_bindings fish_vi_key_bindings
+
 
 #
 # Applications
 #
 alias d="docker"
 alias dk="docker kill"
-alias dr="docker rm"
+alias drm="docker rm"
 alias dri="docker rmi"
 alias dp="docker ps"
 alias dpa="docker ps -a"
@@ -19,7 +21,7 @@ alias g="git"
 alias s="subl"
 alias a="atom"
 alias w="wstorm"
-
+alias rc="rancher-compose --url http://192.168.99.100:8080/v1/projects/1a5 --access-key 7E52EE1FBC5647F7CBC8 --secret-key wZ44Ggttmra25MJKtNhpstDNNWfDAgD1SHeBwc7u"
 alias v="ssh nick@192.168.1.154"
 alias vu="~/repo/Voron/scp_teamcity.sh"
 
